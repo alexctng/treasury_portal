@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Policies and Procedures</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #2b3e50;
+            padding: 0.75rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        /* Fullscreen Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Image');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding-top: 80px; /* Make sure hero content is not overlapped by navbar */
+        }
+
+        /* Dark Overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 40%;
+            padding-left: 50px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-content .btn-cta {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .hero-content .btn-cta:hover {
+            background-color: #0056b3;
+        }
+
+        /* Carousel Styles */
+        .carousel-item img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Custom Carousel Controls */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+            width: 50px; /* Increase the size */
+            height: 50px;
+            border-radius: 50%; /* Make it circular */
+            background-size: 50%; /* Resize the arrow icon */
+        }
+
+        /* Carousel Indicators */
+        .carousel-indicators [data-bs-target] {
+            background-color: white;
+        }
+
+        /* Adjust the layout on smaller screens */
+        @media (max-width: 768px) {
+            .hero-content {
+                max-width: 90%;
+                padding-left: 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .carousel-item img {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/40x40.png?text=Logo" alt="Logo">
+                Treasury Portal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News & Updates</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Financial Policies and Procedures</h1>
+            <p>Explore various documents such as Cash Management Policy, Exchange Rates, Financial SDA, and more that are crucial for Treasury management.</p>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.KZFhMXynxnZjDCRn8zDEfQHaE8?rs=1&pid=ImgDetMain" alt="Cash Management Policy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cash Management Policy and Procedures</h5>
+                        <p>Charities Trust for JCCPS and TKCA</p>
+                        <a href="../SiteAssets/pdf/Treasury/Cash Management Policy and Procedures of Charities Trust for JCCPS and TKCA.pdf" class="btn btn-primary">View PDF</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.lovepik.com/photo/50050/0617.jpg_wh860.jpg" alt="Exchange Rate">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exchange Rate</h5>
+                        <p>Current exchange rates for Treasury</p>
+                        <a href="../SiteAssets/pdf/Treasury/Ex_rate.pdf" class="btn btn-primary">View PDF</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/632/968/1000/international-finance-centre-cityscape-hong-kong-hd-wallpaper-preview.jpg" alt="Finance SDA Section">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Finance SDA Section A.6 Treasury</h5>
+                        <p>Detailed information on Treasury's SDA Section A.6</p>
+                        <a href="../SiteAssets/pdf/Treasury/SDA A.6 (Treasury).pdf" class="btn btn-primary">View PDF</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.shutterstock.com/image-photo/savings-current-account-symbol-turned-260nw-1929251849.jpg" alt="Management of Bank Accounts">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Management of the Group's Bank Accounts</h5>
+                        <p>Policy and procedures for managing the group's bank accounts</p>
+                        <a href="../SiteAssets/pdf/Treasury/Policy Procedure_Club's Bank Accounts.pdf" class="btn btn-primary">View PDF</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/premium-vector/insurance-policy-concept-life-buoy-lifebelt-with-cash-money-dollar-stack-coins-isolated-white-background-vector-3d-isometric-business-finance-illustration-thin-line-design_570429-14357.jpg" alt="Petty Cash Policy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Petty Cash Policy and Procedures</h5>
+                        <p>Policy on petty cash management</p>
+                        <a href="../SiteAssets/pdf/Treasury/PETTY CASH POLICY AND PROCEDURES.pdf" class="btn btn-primary">View PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
